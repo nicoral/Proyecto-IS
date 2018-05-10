@@ -2,6 +2,15 @@
 {%block title%}
 MI PRIMERA APLICACION
 {%endblock%}
+<style>
+	
+	.thumb{
+
+        height: 300px;
+        border: 30px solid #fff;
+        margin: 50px;
+    }
+</style>
 {%block header%}
 <h1>Turist Guide</h1>
 {%endblock%}
@@ -27,7 +36,7 @@ MI PRIMERA APLICACION
                     reader.onload = (function(theFile) {
                         return function(e) {
                           // Insertamos la imagen
-                         document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+                         document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), 'WIDTH="400px" HEIGHT="400px" "/>'].join('');
                         };
                     })(f);
              
