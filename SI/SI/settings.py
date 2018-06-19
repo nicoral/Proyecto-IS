@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app.blog',
+    'app.login',
 ]
 
 MIDDLEWARE = [
@@ -77,10 +78,10 @@ WSGI_APPLICATION = 'SI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'mysql_cymysql',
-        'NAME': 'prueba',
-        'USER':'root',
-        'PASSWORD':'',
-        'HOST':'Localhost',
+        'NAME': 'tour_guide',
+        'USER':'root',#cambiar por los datos de su bd
+        'PASSWORD':'',#cambiar por los datos de su bd
+        'HOST':'localhost',
         'PORT':'',
     }
 }
